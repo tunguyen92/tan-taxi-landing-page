@@ -9,7 +9,9 @@ const SEO = ({ title, description, keywords }) => {
     const metaKeywords = keywords ? keywords : process.env.siteKeywords;
     const siteURL = process.env.siteUrl;
     const twitterHandle = process.env.twitterHandle;
-    const imagePreview = `${siteURL}/${process.env.siteImagePreviewUrl}`;
+    const imagePreview =
+        "https://taxiquynhon.netlify.app/_ipx/w_640,q_75/%2Ffeatures1.jpg?url=%2Ffeatures1.jpg&w=640&q=75";
+    // const imagePreview = `${siteURL}/${process.env.siteImagePreviewUrl}`;
 
     return (
         <Head>
