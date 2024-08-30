@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ButtonGroup } from "@components/Button";
 import { Icon } from "@iconify/react";
+import { phoneNumber, phoneNumberHref } from "@utils/common";
 
 const DATA = [
     {
@@ -126,11 +127,11 @@ export const Footer = () => {
                                             <ButtonGroup alignment="left">
                                                 <a
                                                     role="button"
-                                                    href="tel:0949190369"
+                                                    href={`tel:${phoneNumberHref}`}
                                                     className="btn btn--secondary"
                                                 >
                                                     <Icon icon="gg:phone" />
-                                                    094.919.0369
+                                                    {phoneNumber}
                                                 </a>
                                             </ButtonGroup>
                                         </ul>
@@ -152,7 +153,7 @@ export const Footer = () => {
                             className="btn btn--primary ml-1"
                         >
                             <Icon icon="gg:phone" />
-                            0979456501
+                            0979.456.501
                         </a>
                     </p>
                 </div>

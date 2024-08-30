@@ -5,6 +5,7 @@ import { MotionBTTContainer, MotionInfiniteImage } from "@components/Motion";
 import { SectionContainer } from "@components/Section";
 import { PageTitle } from "@components/Title";
 import { Icon } from "@iconify/react";
+import { phoneNumber, phoneNumberHref } from "@utils/common";
 import Image from "next/image";
 
 export const HomeBanner = () => {
@@ -37,11 +38,11 @@ export const HomeBanner = () => {
                             <Button href="#dichVu">Dịch vụ</Button>
                             <a
                                 role="button"
-                                href="tel:0949190369"
+                                href={`tel:${phoneNumberHref}`}
                                 className="btn btn--secondary"
                             >
                                 <Icon icon="gg:phone" />
-                                094.919.0369
+                                {phoneNumber}
                             </a>
                         </ButtonGroup>
                     </div>

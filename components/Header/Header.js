@@ -4,6 +4,7 @@ import { SectionContainer } from "@components/Section";
 import { Nav } from "@components/Nav";
 import { ButtonGroup, Button } from "@components/Button";
 import { Icon } from "@iconify/react";
+import { phoneNumber, phoneNumberHref } from "@utils/common";
 
 export const Header = () => {
     return (
@@ -36,11 +37,11 @@ export const Header = () => {
                     <ButtonGroup className="hidden md:block">
                         <a
                             role="button"
-                            href="tel:0949190369"
+                            href={`tel:${phoneNumberHref}`}
                             className="btn btn--secondary ml-4"
                         >
                             <Icon icon="gg:phone" />
-                            094.919.0369
+                            {phoneNumber}
                         </a>
                     </ButtonGroup>
                 </SectionContainer>
